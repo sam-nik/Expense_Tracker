@@ -7,6 +7,7 @@ body {
     background-size: cover; /* Cover the entire viewport */
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-position: center; /* Center the background image */
+    background-attachment: fixed;
     height: 100vh; /* Set the height of the body to the full viewport height */
 }
 
@@ -194,7 +195,7 @@ tfoot td {
 
 
 /* CSS for smaller screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .input-section {
         flex-direction: column; /* Stack inputs vertically */
         align-items: flex-start; /* Align items to the left */
@@ -230,5 +231,9 @@ tfoot td {
 
     table {
         width: auto; /* Auto width for table */
+    }
+
+    body {
+        background-size: fill; /* Adjust background image size */
     }
 }
