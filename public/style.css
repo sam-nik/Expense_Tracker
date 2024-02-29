@@ -1,0 +1,235 @@
+/* Reset default styles and set global font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url("https://r4.wallpaperflare.com/wallpaper/880/841/120/mountains-forest-artwork-firewatch-wallpaper-82f06d94b7ca2320baa2a4bd5d75257d.jpg");
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set the height of the body to the full viewport height */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+
+/* Center align headings and apply stylish font */
+h1, h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Elegant font for headings */
+    color: #333; /* Dark gray heading color */
+}
+
+/* Improve input section layout */
+.input-section {
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Center align items */
+    padding: 25px 50px;
+    background-color: rgba(255, 255, 255, 0.5); /* 90% opacity white background */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.input-container {
+    flex: 1; /* Each input container takes equal space */
+    margin-right: 15px; /* Add margin between input containers */
+}
+
+.input-container:last-child {
+    margin-right: 0; /* Remove margin for the last input container */
+}
+
+.input-section label {
+    font-weight: bold;
+    color: #555; /* Dark gray label color */
+    margin-right: 10px;
+}
+
+.input-section input[type="number"],
+.input-section input[type="date"],
+.input-section select {
+    padding: 10px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 25px; /* Rounded corners */
+    width: 50%; /* Adjusted width for inputs */
+    box-sizing: border-box; /* Include padding in input width */
+}
+
+.input-section select {
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* Remove default appearance for webkit browsers */
+    -moz-appearance: none; /* Remove default appearance for Firefox */
+}
+
+.input-section button {
+    padding: 12px 24px; /* Increase button padding */
+    background-color: #007bff; /* Primary blue button color */
+    color: #fff;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.input-section button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+/* Style the expenses list */
+.expenses-list {
+    margin: 25px;
+    background-color: rgba(255, 255, 255, 0.5); /* 90% opacity white background */
+    backdrop-filter: (5px);
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    overflow-x: auto; /* Add horizontal scrollbar when content overflows */
+    overflow-y: auto; /* Add vertical scrollbar when content overflows */
+    max-height: 450px; /* Set a fixed height for the table container */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Add horizontal scrollbar when content overflows */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Increase padding */
+    text-align: center; /* Center align table cells */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold; /* Make column headers bold */
+}
+
+tfoot td {
+    font-weight: bold;
+    text-align: center; /* Center align total amount cell */
+}
+
+.delete-btn {
+    padding: 12px 24px; /* Increase button padding */
+    background-color: #dc3545; /* Red color for delete button */
+    color: #ffffff; /* White text color */
+    border: 2px solid #dc3545; /* Red border */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.delete-btn:hover {
+    background-color: #ff6b6b; /* Lighter red color on hover */
+    color: #dc3545; /* Red color on hover */
+}
+
+/* Add styles for clear button */
+.clear-btn {
+    padding: 12px 24px; /* Increase button padding */
+    background-color: #6c757d; /* Gray color for clear button */
+    color: #fff; /* White text color */
+    border: 2px solid #6c757d; /* Gray border */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.clear-btn:hover {
+    background-color: #495057; /* Darker gray color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+.expenses-list {
+    overflow-y: auto; /* Add vertical scrollbar when content overflows */
+    max-height: 450px; /* Set a fixed height for the table container */
+}
+
+/* Style the scrollbar track */
+.expenses-list::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+    background-color: rgba(255, 255, 255, 0.5); /* Set background color of the scrollbar track with transparency */
+    border-radius: 5px; /* Set border-radius to create rounded edges */
+  }
+  
+  /* Style the scrollbar thumb */
+  .expenses-list::-webkit-scrollbar-thumb {
+    background-color: #b3d9ff; /* Set background color of the scrollbar thumb to white */
+    border-radius: 5px; /* Set border-radius to create rounded edges */
+  }
+  
+  /* Style the scrollbar track when the user hovers over it */
+  .expenses-list::-webkit-scrollbar-track:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Background color of the scrollbar track on hover */
+  }
+  
+  /* Style the scrollbar thumb when the user hovers over it */
+  .expenses-list::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc; /* Color of the scrollbar thumb on hover */
+  }
+
+  footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 10px 0; /* Add top and bottom margin */
+}
+
+.footer-content p::before {
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+
+/* CSS for smaller screens */
+@media only screen and (max-width: 600px) {
+    .input-section {
+        flex-direction: column; /* Stack inputs vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .input-container {
+        margin-right: 0; /* Remove margin between input containers */
+        margin-bottom: 15px; /* Add margin below input containers */
+        width: 100%; /* Set input containers to full width */
+    }
+
+    .input-container label {
+        margin-right: 0; /* Remove right margin for labels */
+        margin-bottom: 5px; /* Add bottom margin for labels */
+    }
+
+    .input-section input[type="number"],
+    .input-section input[type="date"],
+    .input-section select {
+        width: calc(100% - 20px); /* Full width inputs with some padding */
+        padding: 10px; /* Adjust padding for inputs */
+        box-sizing: border-box; /* Include padding in input width */
+    }
+
+    .input-section button {
+        width: 100%; /* Full width button */
+    }
+
+    .expenses-list {
+        overflow-y: auto; /* Add vertical scrollbar when content overflows */
+        max-height: 450px; /* Set a fixed height for the table container */
+    }
+
+    table {
+        width: auto; /* Auto width for table */
+    }
+}
