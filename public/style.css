@@ -8,7 +8,6 @@ body {
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-position: center; /* Center the background image */
     height: 100vh; /* Set the height of the body to the full viewport height */
-    overflow-y: auto;
 }
 
 
